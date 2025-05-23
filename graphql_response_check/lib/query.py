@@ -50,8 +50,6 @@ def send_graphql_query(endpoint: str, query_name: str) -> bool:
         bool: True if HTTP 200 is returned, False otherwise.
     """
     query: str = f"query {{ {query_name} }}"
-    #print(f"[INFO] Sending POST to {endpoint} with payload:")
-    #print(f"[INFO] {{'query': {query!r}}}")
 
     try:
         response: requests.Response = requests.post(
@@ -60,7 +58,6 @@ def send_graphql_query(endpoint: str, query_name: str) -> bool:
             headers={"Content-Type": "application/json"},
             timeout=5
         )
-        # print(f"[INFO] Status Code: {response.status_code}")
         return response.status_code == 200
     except requests.RequestException as e:
         print(f"[ERROR] [{endpoint}] Request failed: {e}")
