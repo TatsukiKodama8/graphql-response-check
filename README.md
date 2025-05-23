@@ -29,9 +29,11 @@ Required packages:
 
 ## 📄 .env Format
 Define GraphQL endpoints as a comma-separated list:
-
 ```
-GRAPHQL_ENDPOINTS="http://10.11.15.231:9006/graphql/,http://10.11.15.232:9007/graphql/"
+GRAPHQL_ENDPOINTS=
+http://10.11.14.231:9006/graphql/,
+http://10.11.15.232:9007/graphql/,
+http://10.11.16.233:9008/graphql/"
 ```
 
 ## 🚀 Usage
@@ -96,4 +98,4 @@ sequenceDiagram
 - Feel free to modify the endpoints in .env to target your own GraphQL microservices!
 
 ## ✏️Author
-- inuverse44/https://github.com/inuverse44
+- Tatsuki Kodama/https://github.com/inuverse44
