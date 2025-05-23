@@ -30,7 +30,7 @@ Required packages:
 ## 📄 .env Format
 Define GraphQL endpoints as a comma-separated list:
 ```
-GRAPHQL_ENDPOINTS=
+GRAPHQL_ENDPOINTS="
 http://10.11.14.231:9006/graphql/,
 http://10.11.15.232:9007/graphql/,
 http://10.11.16.233:9008/graphql/"
